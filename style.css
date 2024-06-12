@@ -1,0 +1,12 @@
+.hamster{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+img { 
+  width: 400px;
+  max-width: 100%;
+}
+

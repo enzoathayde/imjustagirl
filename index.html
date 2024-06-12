@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Im Just a Girl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="hamster">
+      <h1>Toque no Hamster</h1>
+      <audio id="hamsterAudio" src="Sad Hamster Violin Meme (Full).mp3" preload="none"></audio>
+      <img id="hamsterImage" src="hamster.jpg" alt="Imagem de hamster">
+    </div>
+  </main>
+  <script>
+    const hamsterAudio = document.getElementById('hamsterAudio');
+    const hamsterImage = document.getElementById('hamsterImage');
+
+    hamsterImage.addEventListener('click', function() {
+      if (hamsterAudio.paused) {
+        hamsterAudio.play();
+      } else {
+        hamsterAudio.pause();
+      }
+    });
+  </script>
+</body>
+
+</html>
